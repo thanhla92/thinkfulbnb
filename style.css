@@ -1,0 +1,272 @@
+/* -------  General Styles ------- */
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0 10px 10px 10px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 0;
+}
+
+section {
+  padding: 20px;
+}
+
+section.alternate-background {
+  background-color: #00a699;
+  color: #fff;
+}
+
+main img {
+  width: 100%;
+  height: auto;
+}
+
+/* ---  Groups & Items --- */
+
+.group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Update to align items to the left */
+  text-align: left;
+}
+
+.item h3 {
+  margin-top: 10px;
+  font-size: 20px;
+  text-align: left; /* Add text-align property to left align the title */
+}
+
+.item img {
+  width: 400px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+/* -------  Navigation ------- */
+
+header {
+  background-color: #ff385c;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Pangolin", cursive;
+  font-size: 72px;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px 0 0;
+}
+
+header nav ul li:last-child a {
+  margin-right: 0;
+}
+
+/* -------  Search Form ------- */
+
+form {
+  border: 2px solid #ff385c;
+  padding: 10px;
+  margin: 20px;
+}
+
+form .form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+form label {
+  font-weight: bold;
+  flex: 1;
+  text-align: right;
+  margin-right: 10px;
+}
+
+form select,
+form input {
+  flex: 2;
+}
+
+form button {
+  background-color: #ff385c;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 15px;
+  width: 100%;
+}
+
+/* -------  Footer ------- */
+
+footer {
+  background-color: #ff385c;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* -------  Media Query: Desktop View------- */
+
+@media all and (min-width: 480px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Added padding to maintain space */
+    flex-direction: row; /* Ensure horizontal layout */
+  }
+
+  .logo {
+    text-align: left; /* Align logo to the left */
+  }
+
+  #menu {
+    display: flex;
+    justify-content: flex-end; /* Align menu to the right */
+  }
+
+  #menu li {
+    margin-right: 20px;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  form .form-row {
+    margin-bottom: 0;
+  }
+
+  form button {
+    width: 200px;
+    padding: 10px 0;
+  }
+
+  #about {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+  }
+  
+  .about-content {
+    display: flex;
+  }
+  
+  .about-images {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 20px 30px 10px;
+  }
+  
+  .about-images img {
+    margin-right: 10px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .about-content p {
+    width: 600px;
+    margin-top: 80px;
+    margin-left: 10px;
+  }
+
+  .item {
+    flex: 1;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    width: 50%; /* Set width to occupy half of the container in desktop view */
+  }
+
+  .item h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .item img {
+    width: 770px;
+  }
+
+  #host {
+    display: flex;
+    justify-content: left;
+  }
+  
+  .host-container {
+    display: flex;
+    text-align: center;
+  }
+  
+  .host-content {
+    text-align: left;
+    flex: 1;
+    margin-bottom: 20px;
+    margin-top: 80px;
+    margin-right: 0;
+  }
+  
+  .host-image {
+    flex: 1;
+    margin-bottom: 20px;
+  }
+  
+  .host-image img {
+    width: 100%;
+    max-width: 700px;
+  }
+}
