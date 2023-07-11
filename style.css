@@ -106,7 +106,7 @@ form label {
 
 form select,
 form input {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 form select {
@@ -211,7 +211,7 @@ footer p {
   form select,
   form input {
     flex-grow: 1;
-    max-width: 68%;
+    max-width: 65%;
     margin-bottom: 10px;
   }
 
@@ -269,33 +269,33 @@ footer p {
 
 /* ------- Hosts ------- */
 
-#host {
-  display: flex;
-  justify-content: left;
-}
+  #host {
+    display: flex;
+    justify-content: left;
+  }
 
-.host-container {
-  display: flex;
-  text-align: center;
-}
+  .host-container {
+    display: flex;
+    text-align: center;
+  }
 
-.host-content {
-  text-align: left;
-  flex: 1;
-  margin-bottom: 20px;
-  margin-top: 60px;
-  margin-right: 0;
-}
+  .host-content {
+    text-align: left;
+    flex: 1;
+    margin-bottom: 20px;
+    margin-top: 60px;
+    margin-right: 0;
+  }
 
-.host-image {
-  flex: 1;
-  margin-bottom: 20px;
-}
+  .host-image {
+    flex: 1;
+    margin-bottom: 20px;
+  }
 
-.host-image img {
-  width: 100%;
-  height: auto;
-}
+  .host-image img {
+    width: 100%;
+    height: auto;
+  }
 
 }
 
