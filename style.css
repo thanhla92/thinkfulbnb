@@ -211,7 +211,7 @@ footer p {
   form select,
   form input {
     flex-grow: 1;
-    max-width: 65%;
+    max-width: 68%;
     margin-bottom: 10px;
   }
 
