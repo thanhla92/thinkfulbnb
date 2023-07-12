@@ -98,24 +98,25 @@ header nav ul li a:hover {
 form {
   border: 2px solid #ff385c;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 form label {
   font-weight: bold;
+  margin-right: 90px;
+  margin-left: 10px;
+  text-align: left;
 }
 
 form select,
 form input {
   margin-bottom: 20px;
+  margin-left: 10px;
+  flex: 1;
 }
 
-form select {
-  width: 100%;
-}
-
-form input {
-  width: 100%;
-}
 
 form button {
   background-color: #ff385c;
@@ -197,6 +198,7 @@ footer p {
 
   form {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
@@ -205,13 +207,14 @@ footer p {
   form label {
     flex-basis: 30%;
     max-width: 30%;
-    margin-right: 10px;
+    margin: 0;
   }
 
   form select,
   form input {
+    display: flex;
     flex-grow: 1;
-    max-width: 68%;
+    max-width: 100%;
     margin-bottom: 10px;
   }
 
@@ -229,15 +232,16 @@ footer p {
   }
 
   #about .about-content img {
-    width: 25%;
-    height: 100%;
+    width: 24%;
+    height: auto;
     margin-right: 20px;
   }
 
   #about .about-content p {
     flex: 1 1 60%;
-    max-width: 100%;
+    width: 5%;
     margin-left: 20px; /* Add this line */
+    margin-top: 50px;
   }
 
   /* ------- Ideas ------- */
@@ -283,16 +287,16 @@ footer p {
     text-align: left;
     flex: 1;
     margin-bottom: 20px;
-    margin-top: 60px;
+    margin-top: 80px;
     margin-right: 0;
   }
 
   .host-image {
     flex: 1;
-    margin-bottom: 20px;
   }
 
   .host-image img {
+    display: flex;
     width: 100%;
     height: auto;
   }
