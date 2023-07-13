@@ -60,8 +60,9 @@ header {
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 72px;
+  font-size: 58px;
   color: #fff;
+  text-align: center;
 }
 
 header nav {
@@ -98,23 +99,26 @@ header nav ul li a:hover {
 form {
   border: 2px solid #ff385c;
   padding: 10px;
+}
+
+.form-group {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-form label {
-  font-weight: bold;
-  margin-right: 90px;
-  margin-left: 10px;
-  text-align: left;
-}
-
-form select,
-form input {
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin: 0;
+  flex-basis: 30%; /* Adjust this as necessary */
+}
+
+.form-group select,
+.form-group input {
+  flex-grow: 1;
+  max-width: 72%; /* Adjust this as necessary */
   margin-left: 10px;
-  flex: 1;
 }
 
 
@@ -204,23 +208,20 @@ footer p {
     justify-content: space-between;
   }
 
-  form label {
-    flex-basis: 30%;
-    max-width: 30%;
-    margin-left: 10px;
+  .form-group label {
+    margin-top: auto;
+    flex-basis: 20%;
   }
 
-  form select,
-  form input {
-    display: flex;
-    flex-grow: 1;
-    max-width: 100%;
-    margin-bottom: 10px;
+  .form-group select,
+  .form-group input {
+    margin-top: auto;
+    max-width: 72%;
   }
 
   form button {
     flex-basis: 100%;
-    max-width: 100px; /* Adjust max-width as needed */
+    max-width: 125px; /* Adjust max-width as needed */
     padding: 10px 15px; /* Adjust padding as needed */
   }
 
