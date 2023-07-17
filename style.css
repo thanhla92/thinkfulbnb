@@ -221,7 +221,7 @@ footer p {
     display: flex;
     flex-direction: column;
     margin-right: 20px;
-    align-items: baseline;
+    align-items: flex-start;
   }
 
   .form-group:last-child {
@@ -243,8 +243,6 @@ footer p {
   }
 
   form button {
-    flex-shrink: 0;
-    margin-left: 20px;
     width: auto;
     padding: 10px 20px;
   }
