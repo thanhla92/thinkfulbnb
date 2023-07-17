@@ -36,34 +36,45 @@
         <h2>Find the perfect vacation rental</h2>
         <!-- Create a form here -->
         <form>
-          <div class="form-group">
-            <label for="location">Location</label>
-            <input type="text" id="location" placeholder="Search destination" required>
-          </div>
-          <div class="form-group">
-            <label for="arrive">Arrive</label>
-            <input type="date" id="arrive" required>
-          </div>
-          <div class="form-group">
-            <label for="depart">Depart</label>
-            <input type="date" id="depart" required>
-          </div>
-          <div class="form-group">
-            <label for="type">Type</label>
-            <select id="type" required>
-              <option value="">Select a type</option>
-              <option value="Apartment">Apartment</option>
-              <option value="Barn">Barn</option>
-              <option value="Castle">Castle</option>
-              <option value="Houseboat">Houseboat</option>
-              <option value="Tiny House">Tiny House</option>
-              <option value="Yacht">Yacht</option>
-              <option value="Yurt">Yurt</option>
-            </select>
+          <div class="form-row">
+          <div class="form-container">
+            <div class="form-group">
+              <label for="location">Location</label>
+              <div class="input-field">
+                <input type="text" id="location" placeholder="Search destination" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="arrive">Arrive</label>
+              <div class="input-field">
+                <input type="date" id="arrive" class="date-input" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="depart">Depart</label>
+              <div class="input-field">
+                <input type="date" id="depart" class="date-input" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="type">Type</label>
+              <div class="input-field">
+                <select id="type" required>
+                  <option value="">Select a type</option>
+                  <option value="Apartment">Apartment</option>
+                  <option value="Barn">Barn</option>
+                  <option value="Castle">Castle</option>
+                  <option value="Houseboat">Houseboat</option>
+                  <option value="Tiny House">Tiny House</option>
+                  <option value="Yacht">Yacht</option>
+                  <option value="Yurt">Yurt</option>
+                </select>
+              </div>
+            </div>
           </div>
           <button type="submit">Search</button>
+        </div>
         </form>
-
       </section>
 
       <!-- About -->
